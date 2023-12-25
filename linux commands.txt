@@ -1,0 +1,43 @@
+=>to check manual of any command type
+
+1) man command_name
+2) help #shows list of commands in the system
+
+=>Memory and status checkings in Linux
+
+1) cat /proc/meminfo #check the Ram status
+2) free
+3) free -m
+4) free -g
+5) free -k
+6) top
+7) vmstat
+8) vmstat -s
+9) dmidecode --type memory
+
+=>check the version of linux
+
+1) cat /etc/os-release
+2) hostnamectl
+3) uname -r
+4) cat /proc/version
+
+=>identifing package manager in linux code
+
+declare -A osInfo;
+osInfo[/etc/redhat-release]=yum
+osInfo[/etc/arch-release]=pacman
+osInfo[/etc/gentoo-release]=emerge
+osInfo[/etc/SuSE-release]=zypp
+osInfo[/etc/debian_version]=apt-get
+
+for f in ${!osInfo[@]}
+do
+    if [[ -f $f ]];then
+        echo Package manager: ${osInfo[$f]}
+    fi
+done
+
+=> check the list of tasks, processes, jobs, cronejobs
+
+1) crontab -l #to check cronjob

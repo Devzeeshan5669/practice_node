@@ -1,0 +1,17 @@
+{
+  "name": "searchdatajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bullmq": "^3.4.1",
+    "json-query": "^2.2.2",
+    "node-match-path": "^0.6.3",
+    "wpapi": "^1.2.2"
+  }
+}
