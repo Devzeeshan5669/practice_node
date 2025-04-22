@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@elastic/elasticsearch": "^8.13.0",
     "bullmq": "^3.4.1",
     "json-query": "^2.2.2",
+    "mongodb": "^6.5.0",
+    "node-fetch": "^3.3.2",
     "node-match-path": "^0.6.3",
     "wpapi": "^1.2.2"
   }
